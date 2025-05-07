@@ -1,0 +1,133 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+    font-family: Poppins;
+}
+button {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #0869fb;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 1s;
+    border: 2px solid #0869fb;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #0869fb;
+  }
+  
+  button:hover {
+    color: #000000;
+    box-shadow: inset 0 -100px 0 0 #0869fb;
+  }
+  
+  button:active {
+    transform: scale(0.9);
+  }
+  .menu-section {
+    padding: 80px 20px;
+    background-color: #000000;
+    text-align: center;
+  }
+  
+  .menu-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #0869fb;
+  }
+  
+  .menu-subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color:#0869fb;
+  }
+  .menu-filters {
+    margin-bottom: 30px;
+  }
+  
+  .filter-btn {
+    background: transparent;
+    border: 1px solid #0869fb;
+    color: #0869fb;
+    padding: 10px 15px;
+    margin: 0 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .filter-btn.active,
+  .filter-btn:hover {
+    background-color: #0869fb;
+    color: black;
+  }
+  
+  
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    animation-name: grid;
+    animation-duration: 3s;
+  }
+  @keyframes grid{
+    from{opacity: 0;}
+    to{opacity: 1;}
+  }
+  
+  .menu-item {
+    background-color: #000000;
+    border-radius: 7px;
+    padding: 5px;
+    box-shadow:0px 2px 5px rgb(93, 93, 93);
+    transition: transform 0.2s ease;
+    margin-bottom: 10px;
+  }
+  
+  .menu-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .menu-item h3 {
+    margin: 5px 0;
+    font-size: 20px;
+    color: #0869fb;
+  }
+  
+  .menu-item p {
+    font-size: 14px;
+    color: #0869fb;
+  }
+  
+  .price {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #f39c12;
+    font-size: 16px;
+  }
+  .btnmenu{
+    margin-top: 30px;
+  }
+  @media(max-width:400px){
+    .filter-btn{
+      margin: 0%;
+      padding: 10px;
+    }
+  }

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="shortcut icon" href="Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="reservation.css">
+    <script src="nav.js"></script>
+
+    
+    <title>Reservations | Taste n Chill</title>
+</head>
+<body>
+    <!-- -----------------nav bar---------------------- -->
+    <nav>
+      <a href=""><img src="Taste n Chill3.png" alt=""></a>
+
+      <ul class="navlist">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li class="active"><a href="reservation.html">Reservation</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+
+      <!-- -------hamburger menu-------- -->
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
+    <div class="cover">
+    <div class="top">
+        <h2 class="top-title">Make A Reservation</h2>
+        <p class="top-subtitle">Please fill out the form below to book your table.</p>
+    </div>
+
+    <section class="reservation-section">
+    <div class="overlay" data-aos="zoom-in" data-aos-duration="2000">
+      <form class="reservation-form" action="/reserve" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="table">Number of Tables:</label>
+        <input type="number" id="table" name="table" min="1" max="20" required>
+
+        <button type="submit" class="submit">Book Now</button>
+      </form>
+    </div>
+  </section>
+  </div>
+
+  <footer>
+    <div>
+      <img src="Taste n Chill3.png" alt="" class="footlogo">
+    </div>
+    <div class="links">
+      <h2>Links</h2>
+      <ul>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="reservation.html">Reservations</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Contact Us</h2>
+        <div style="display: flex;margin-left: 40px;">
+        <img src="icons8-call-40.png" alt="" class="icon"><p>09164228206, 08001234567</p>
+        </div>
+        <div style="display: flex;margin-left: 40px;" >
+        <img src="icons8-location-40.png" alt="" class="icon"><p> 123 Foodie Street, Ogba, Lagos</p>
+        </div>
+        <div style="display: flex;margin-left: 40px;">
+        <img src="icons8-world-40.png" alt="" class="icon"><p>Taste n Chill.com</p>
+        </div>
+        <div style="display: flex;margin-left: 40px;">
+        <img src="icons8-email-40.png" alt="" class="icon"><p>info@tastenchill.com</p>
+        </div>
+
+        <a href="reservation.html"><button style="margin: 20px 0px 20px 50px;" class="button">Make a Reservation</button></a>
+      </div>
+  </footer>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+    color: white;
+    font-family: Poppins;
+}
+.banner{
+    width: 100%;
+    height: 620px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+.banimg{
+    margin-top: 60px;
+    width: inherit;
+    height: inherit;
+}
+.banner h1,
+.banner p{
+    position: absolute;
+    text-align: center;
+}
+.banner h1{
+    color: #0869fb;
+    margin: 10%;
+    font-family: Train One;
+    font-size: 50px;
+    top: 20%;
+}
+.banner p{
+    top: 70%;
+    font: 22px Poppins;
+    color: white;
+    width: 40%;
+    margin:0 30%;
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.abt{
+    width: 45%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.abt h2{
+    font: 45px poppins;
+    color: #0869fb;
+}
+.abt p{
+    width: 80%;
+}
+.about img{
+    width: 45%;
+    height: 450px;
+}
+/* From Uiverse.io by adamgiebl */ 
+button {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #0869fb;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 1s;
+    border: 2px solid #0869fb;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #0869fb;
+  }
+  
+  button:hover {
+    color: #000000;
+    box-shadow: inset 0 -100px 0 0 #0869fb;
+  }
+  
+  button:active {
+    transform: scale(0.9);
+  }
+  .menu-section {
+    padding: 80px 20px;
+    background-color: #000000;
+    text-align: center;
+  }
+  
+  .menu-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #0869fb;
+  }
+  
+  .menu-subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color:#0869fb;
+  }
+  
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .menu-item {
+    background-color: #000000;
+    border-radius: 7px;
+    padding: 5px;
+    box-shadow:0px 2px 5px white;
+    transition: transform 0.2s ease;
+  }
+  
+  .menu-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .menu-item h3 {
+    margin: 5px 0;
+    font-size: 20px;
+    color: #0869fb;
+  }
+  
+  .menu-item p {
+    font-size: 14px;
+    color: #0869fb;
+  }
+  
+  .price {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #f39c12;
+    font-size: 16px;
+  }
+  .btnmenu{
+    margin-top: 30px;
+  }
+  .testimonials-section {
+    background-color: #000000;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    color: #0869fb;
+    margin-bottom: 50px;
+  }
+  
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: none;
+  }
+  .fade {
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+  
+  @keyframes fade {
+    from { opacity: 0 }
+    to { opacity: 1 }
+  }
+  
+  .testimonial-card {
+    background-color: #ffffff;
+    color: #0869fb;
+    padding: 25px;
+    border-radius: 12px;
+    transition: transform 0.2s ease;
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .testimonial-text {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .testimonial-author img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+  }
+  .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin-top: 15px;
+    background-color: #717171;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+  }
+  
+  .dot.active {
+    background-color: #ffffff;
+  }
+@media(max-width:800px){
+    .banner{
+        height: 500px;
+    }
+    .banner h1{
+        font-size: 35px;
+        top: 25%;
+    }
+    .banner p{
+        width: 80%;
+        margin: 0 10%;
+        font-size: 18px;
+    }
+    .about{
+        flex-direction: column ;
+    }
+    .about img,
+    .abt{
+        width: 95%;
+    }
+    .about img{
+        height: 300px;
+    }
+    .btnmenu{
+        width: 100%;
+        margin-left: 0%;
+    }
+}

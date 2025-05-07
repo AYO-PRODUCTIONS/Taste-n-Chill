@@ -1,0 +1,137 @@
+nav{
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    box-shadow: 0px 0px 3px white;
+    z-index: 1000;
+}
+.navlist{
+    list-style-type: none;
+    color: white;
+    display: flex;
+    font-size: 15px;
+    font-family: poppins, sans-serif;
+    margin-right: 100px;
+}
+.navlist li{
+    margin: 0 30px;
+    position: relative;
+    text-decoration: none;
+}
+.navlist li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navlist li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color:blue;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+  
+.navlist li:hover::after,
+.navlist li.active::after
+ {
+    transform: scaleX(1);
+}
+
+nav img{
+    margin-left: 70px;
+    height: 70px;
+    padding: 10px;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px auto;
+    transition: all 0.3s ease;
+    background-color: blue;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .navlist {
+        margin-right: 100px;
+    }
+}
+
+@media (max-width: 950px) {
+    .hamburger {
+        display: block;
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .navlist {
+        position: fixed;
+        left: -100%;
+        top: 60px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        margin-right: 0;
+        padding: 20px 0;
+    }
+    
+    .navlist.active {
+        left: 0%;
+    }
+    
+    .navlist li {
+        margin: 15px 0;
+    }
+    .navlist li::after {
+        width:20%;
+        margin-left: 40%;
+    }
+    
+    nav img {
+        margin-left: 30px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav img {
+        margin-left: 20px;
+        height: 50px;
+    }
+    .navlist{
+        top: 5%;
+    }
+    .hamburger {
+        margin-right: 20px;
+    }
+}

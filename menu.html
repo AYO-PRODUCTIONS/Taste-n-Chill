@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="shortcut icon" href="Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="nav.js"></script>
+    <script src="menu.js"></script>
+    <title>Menu | Taste n Chill</title>
+</head>
+<body>
+    <!-- -----------------nav bar---------------------- -->
+    <nav>
+
+        <img src="Taste n Chill3.png" alt="">
+
+      <ul class="navlist">
+        <li><a href="index.html" >Home</a></li>
+        <li class="active"><a href="menu.html">Menu</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+
+      <!-- -------hamburger menu-------- -->
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
+
+    <section id="menu" class="menu-section">
+        <h2 class="menu-title">Our Menu</h2>
+        <p class="menu-subtitle">Tasty picks to satisfy every craving</p>
+
+        <div class="menu-filters">
+          <button class="filter-btn active" data-category="all">All</button>
+          <button class="filter-btn" data-category="mains">Mains</button>
+          <button class="filter-btn" data-category="drinks">Drinks</button>
+          <button class="filter-btn" data-category="specials">Specials</button>
+        </div>
+      
+        <div class="menu-grid">
+          <div class="menu-item" data-category="mains">
+            <img src="https://images.unsplash.com/photo-1670398564097-0762e1b30b3a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGdyaWxsZWQlMjBjaGlja2VufGVufDB8MHwwfHx8MA%3D%3D" alt="Grilled Chicken" />
+            <h3>Grilled Chicken Deluxe</h3>
+            <p>Juicy grilled chicken served with creamy mashed potatoes and veggies.</p>
+            <span class="price">₦6,500</span>
+          </div>
+      
+          <div class="menu-item" data-category="mains">
+            <img src="https://media.istockphoto.com/id/1005860604/photo/eating-homemade-spaghetti-bolognese.webp?a=1&b=1&s=612x612&w=0&k=20&c=2Eh4SG-TvDgQETXXpFK0MJcvz_DWp4IppG5Md8Ct9sU=" alt="Spaghetti Bolognese" />
+            <h3>Spaghetti Bolognese</h3>
+            <p>Classic Italian-style pasta in a rich meaty sauce.</p>
+            <span class="price">₦6,800</span>
+          </div>
+      
+          <div class="menu-item" data-category="specials">
+            <img src="https://images.unsplash.com/photo-1565060050533-478757130681?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNoaWxsJTIwcGxhdHRlciUyMHdpbmdzJTIwYW5kJTIwZnJpZXN8ZW58MHwwfDB8fHww" alt="Chill Platter" />
+            <h3>Chill Platter</h3>
+            <p>A mix of wings, fries, sliders, and dips - perfect for sharing.</p>
+            <span class="price">₦5,200</span>
+          </div>
+      
+          <div class="menu-item" data-category="drinks">
+            <img src="https://media.istockphoto.com/id/1310237437/photo/four-glasses-of-cocktails-on-black-napkins-black-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=Mvq_vrKsTXwmpmhiNB-oZbfU6QtWpnIYriXjcvVPaWw=" alt="Mojito Mocktail" />
+            <h3>Mojito Mocktail</h3>
+            <p>Refreshing minty lime drink, no alcohol — all vibes.</p>
+            <span class="price">₦2,800</span>
+          </div>
+
+          <div class="menu-item" data-category="mains">
+            <img src="https://media.istockphoto.com/id/688602226/photo/jollof-rice-with-chicken-and-plantains.webp?a=1&b=1&s=612x612&w=0&k=20&c=yziUVbgIUo5X4Dr3pc7QY6LlZ62nDg2XDJKQNnVdqe0=" alt="Jollof Rice Deluxe" />
+            <h3>Jollof Rice Deluxe</h3>
+            <p>Nigerian-style jollof rice served with grilled chicken, fried plantains, and salad.</p>
+            <span class="price">₦4,500</span>
+          </div>
+      
+          <div class="menu-item" data-category="specials">
+            <img src="https://images.unsplash.com/photo-1605478371310-a9f1e96b4ff4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cGVwcGVyb25pJTIwcGl6emF8ZW58MHx8MHx8fDA%3D" alt="Taste n Chill Supreme" />
+            <h3>Taste n Chill Supreme</h3>
+            <p>Pepperoni, sausage, peppers, onions, and mushrooms on a cheesy base.</p>
+            <span class="price">₦8,000</span>
+          </div>
+      
+          <div class="menu-item" data-category="mains">
+            <img src="https://whatmollymade.com/wp-content/uploads/2023/03/steak-alfredo-1.jpg" alt="Creamy Alfredo Pasta" />
+            <h3>Creamy Alfredo Pasta</h3>
+            <p>Pasta tossed in rich Alfredo sauce with grilled chicken and parmesan.</p>
+            <span class="price">₦5,200</span>
+          </div>
+      
+          <div class="menu-item" data-category="specials">
+            <img src="https://media.istockphoto.com/id/182435096/photo/chocolate-cake-and-ice-cream.webp?a=1&b=1&s=612x612&w=0&k=20&c=zmhq_58_8MMv8ut-I-cXL2BCTedchNB5WsIys5e-MXg=" alt="Chocolate Lava Cake" />
+            <h3>Chocolate Lava Cake</h3>
+            <p>Warm chocolate cake with a gooey center, served with vanilla ice cream.</p>
+            <span class="price">₦2,800</span>
+          </div>
+
+          <div class="menu-item" data-category="drinks">
+            <img src="https://images.pexels.com/photos/2672942/pexels-photo-2672942.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Zobo Mojito" />
+            <h3>Zobo Mojito</h3>
+            <p>A local twist on the classic mojito with zobo, lime, and mint.</p>
+            <span class="price">₦1,500</span>
+          </div>
+
+          <div class="menu-item" data-category="mains"specials>
+            <img src="https://media.istockphoto.com/id/2189109108/photo/tempura-shrimp-in-golden-and-perfectly-fried.webp?a=1&b=1&s=612x612&w=0&k=20&c=H-z8sb4ac4pIfOL_OU6eV8qLiyMlAuYeZozHJhY5VMY=" alt="Prawn Tempura" />
+            <h3>Prawn Tempura</h3>
+            <p>Lightly battered prawns fried to perfection with sweet chili sauce.</p>
+            <span class="price">₦4,500</span>
+          </div>
+
+          <div class="menu-item" data-category="drinks">
+            <img src="https://plus.unsplash.com/premium_photo-1664392073748-35c3a1c3c385?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGNoYXBtYW4lMjBkcmlua3xlbnwwfHwwfHx8MA%3D%3D" alt="Chapman" />
+            <h3>Chapman</h3>
+            <p>Our house-made Chapman with a blend of Angostura bitters, Fanta, Sprite, and grenadine.</p>
+            <span class="price">₦2,200</span>
+          </div>
+
+          <div class="menu-item" data-category="specials">
+            <img src="https://media.istockphoto.com/id/525354054/photo/zeppole-1st.webp?a=1&b=1&s=612x612&w=0&k=20&c=K43Pdpvbb99RdI5PrRx8KcCxvTuqJF6P9KOvjV9Jrjk=" alt="Puff-Puff Platter" />
+            <h3>Puff-Puff Platter</h3>
+            <p>Golden puff-puffs drizzled with honey and coconut flakes.</p>
+            <span class="price">₦1,800</span>
+          </div>
+
+          <div class="menu-item" data-category="mains">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Egusi_soup_with_pounded_yam_and_assorted_meats.jpg?20221014124327" alt="Egusi Soup with Pounded Yam">
+            <h3>Egusi Soup with Pounded Yam</h3>
+            <p>Rich melon seed soup with assorted meats and a side of smooth pounded yam.</p>
+            <span class="price">₦4,800</span>
+          </div>
+
+          <div class="menu-item" data-category="mains">
+            <img src="https://static.wixstatic.com/media/f1bfef_884db24be895460a8866804120bae3f5~mv2.jpg/v1/fill/w_833,h_624,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f1bfef_884db24be895460a8866804120bae3f5~mv2.jpg" alt="Amala with Gbegiri & Ewedu">
+            <h3>Amala with Gbegiri & Ewedu</h3>
+            <p>Traditional combo with soft amala, bean soup (gbegiri), ewedu, and spicy beef stew.</p>
+            <span class="price">₦4,800</span>
+          </div>
+
+          <div class="menu-item" data-category="mains">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzYsy6z02pXagJ1Y9LCKWF-F-DtFWEtJPcCA&s" alt="Ofada Rice & Ayamase Sauce">
+            <h3>Ofada Rice & Ayamase Sauce</h3>
+            <p>Local brown rice served with spicy green pepper sauce and assorted meat.</p>
+            <span class="price">₦5,000</span>
+          </div>
+
+          <div class="menu-item" data-category="drinks">
+            <img src="https://plus.unsplash.com/premium_photo-1663126827264-409d695e0be7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZnJ1aXQlMjBzbW9vdGhpZSU1Q3xlbnwwfHwwfHx8MA%3D%3D" alt="Smoothie">
+            <h3>Fruit Smoothie</h3>
+            <p>Blend of banana, pineapple, mango, and yogurt — served chilled.</p>
+            <span class="price">₦1,800</span>
+          </div>          
+          
+          <div class="menu-item" data-category="drinks">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzS1K7JbkiT4Lws3Gv2wsCpj4P6Xv0aObOGQ&s" alt="Iced Tea">
+            <h3>Lemon Iced Tea</h3>
+            <p>Refreshing iced tea with a tangy lemon twist — lightly sweetened.</p>
+            <span class="price">₦1,200</span>
+          </div>
+
+          <div class="menu-item" data-category="drinks">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" alt="Cappuccino">
+            <h3>Cappuccino</h3>
+            <p>Espresso topped with steamed milk and a thick layer of foam.</p>
+            <span class="price">₦1,200</span>
+          </div>
+        </div>
+
+      </section>
+
+      <footer>
+        <div>
+          <img src="Taste n Chill3.png" alt="" class="footlogo">
+        </div>
+        <div class="links">
+          <h2>Links</h2>
+          <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reservation.html">Reservations</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            </li>
+          </ul>
+        </div>
+  
+        <div>
+          <h2>Contact Us</h2>
+        <div style="display: flex;margin-left: 40px;">
+        <img src="icons8-call-40.png" alt="" class="icon"><p>09164228206, 08001234567</p>
+        </div>
+        <div style="display: flex;margin-left: 40px;" >
+        <img src="icons8-location-40.png" alt="" class="icon"><p> 123 Foodie Street, Ogba, Lagos</p>
+        </div>
+        <div style="display: flex;margin-left: 40px;">
+        <img src="icons8-world-40.png" alt="" class="icon"><p>Taste n Chill.com</p>
+        </div>
+        <div style="display: flex;margin-left: 40px;">
+        <img src="icons8-email-40.png" alt="" class="icon"><p>info@tastenchill.com</p>
+        </div>
+
+        <a href="reservation.html"><button style="margin: 20px 0px 20px 50px;" class="button">Make a Reservation</button></a>
+      </div>
+      </footer>
+  
+</body>
+</html>

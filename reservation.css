@@ -1,0 +1,88 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: #000000;
+    color: #0869fb;
+    font-family: Poppins;
+}
+.top{
+    padding: 80px 20px;
+    text-align: center;
+}
+.top-title{
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.top-subtitle{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.cover{
+  background-image: url('https://i0.wp.com/355group.com/wp-content/uploads/2022/09/355ikj.jpg?w=1000&ssl=1');
+    background-size: cover;
+    background-position: center;  
+}
+.reservation-section {
+    position: relative;
+    padding: 20px;
+    padding-bottom:50px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.8); /* dark overlay for contrast */
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .reservation-form {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .reservation-form label {
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+  
+  .reservation-form input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  .reservation-form button {
+    padding: 12px;
+    background-color: #fe8a41;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reservation-form button:hover {
+    background-color: #e76e1d;
+  }
+@media(max-width:700px){
+  .top{
+    padding: 70px 20px;
+  }
+  .top-title{
+    font-size: 30px;
+  }
+  .top-subtitle{
+    margin-bottom: -30%;
+  }
+}
